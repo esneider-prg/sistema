@@ -164,6 +164,6 @@ class EmpleadoController extends Controller
         if (Storage::delete('public/'.$empleado->Foto)) {
             Empleado::destroy($id);
         }
-        return redirect('empleado')->with('mensaje','Empleado Borrado con exito');
+        return redirect('empleado')->with('mensaje','Empleado Borrado con Exito');
     }
 }
